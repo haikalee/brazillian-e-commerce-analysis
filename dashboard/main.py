@@ -1,7 +1,5 @@
 # import packages
 import streamlit as st
-import matplotlib.pyplot as plt
-import datetime
 
 # import local functions
 from data import *
