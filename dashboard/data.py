@@ -25,7 +25,7 @@ orders_df_columns = ["order_purchase_timestamp", "order_approved_at"]
 
 orders_df = to_datetime(orders_df, orders_df_columns)
 
-# mencari selisih antara waktu persetujuan pesanan hingga pesanan diterima oleh pelanggan
+# mencari selisih antara waktu persetujuan pesanan hingga pesanan diterima oleh  pelanggan
 all_df["delivery_duration"] = (
     all_df.order_delivered_customer_date - all_df.order_approved_at
 ).dt.days
