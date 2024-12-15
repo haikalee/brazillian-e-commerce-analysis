@@ -30,7 +30,6 @@ all_df["delivery_duration"] = (
     all_df.order_delivered_customer_date - all_df.order_approved_at
 ).dt.days
 
-
 # merge dataframes
 order_item_product = pd.merge(
     left=order_items_df,
@@ -62,7 +61,6 @@ def order_status_data():
 
 # define function for analyze mean of delivery time
 def delivery_time_mean_data():
-
     # mencari data delivery_duration yang tidak sesuai
     all_df.drop(all_df[all_df["delivery_duration"] < 0].index, inplace=True)
 
